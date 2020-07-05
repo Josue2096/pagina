@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINTAXIS CSS</title>
+    <style>
+
+        *{
+            margin:0px;
+            padding: 0px;
+            list-style: none;
+        }
+        header{
+            position: relative;
+            margin: 20px auto;
+            width:1000px;
+            height:120px;
+            background: sandybrown;
+        }
+        #top ul{
+            width:1010px;
+            height: 192px;
+        }
+        #top ul li{
+            float:left;
+            width:326px;
+            height:192px;
+            background: lawngreen;
+            margin-right:10px;
+
+        }
+        #logo{
+            position: absolute;
+            top:30px;
+            left:30px;
+            width: 200px;
+            height: 60px;
+            background: lightseagreen;
+        }
+        .redes{
+            position: absolute;
+            width: 42px;
+            height:42px;
+            background: lightslategray;
+            border-radius:100% ;
+        }
+
+        #icono1{
+            top:42px;
+            right:120px;
+        }
+
+        #icono2{
+            top:42px;
+            right:71px;
+        }
+
+        #icono3{
+            top:42px;
+            right:19px;
+        }
+
+        nav{
+            position: relative;
+            margin: auto;
+            width:1000px;
+            height:48px;
+            background: darkgoldenrod;
+        }
+
+        .botones{
+            float:left;
+            width:196px;
+            margin:0px 2px;
+            height:48px;
+            background: olive;
+        }
+        #top{
+            position: relative;
+            margin:20px auto;
+            width:1000px;
+            height:192px;
+        }
+        section{
+            position: relative;
+            margin: auto;
+            width:1000px;
+            height:453px;
+            background: khaki;
+        }
+        footer{
+            position: relative;
+            margin:20px auto;
+            width:1000px;
+            height:70px;
+            background: lightcoral;
+        }
+        aside#izq{
+            position:absolute;
+            left:0;
+            top:0;
+            width: 200px;
+            height: 453px;
+            background: firebrick;
+        }
+        aside#der{
+            position:absolute;
+            right:0;
+            top:0;
+            width: 200px;
+            height: 453px;
+            background: firebrick;
+        }
+        article{
+            position:absolute;
+            left: 200px;
+            top:0;
+            width:600px;
+            height: 453px;
+            background: mediumslateblue;
+        }
+    </style>
+    <!--
+        body {
+            background-color: darkturquoise;
+        }
+        #caja {
+            width:200px;
+            height:150px;
+            background: forestgreen;
+        }
+        .grupo{
+            width:200px;;
+            height:150px;
+            background: gold;
+            margin:10px;
+        }
+        header{
+            width:500px;
+            height:250px;
+            background: gold;
+            margin:20px;
+            border: 5px solid blue;
+            padding:20px;
+        }
+
+        #logo{
+            width:80px;
+            height:20px;
+            background: indigo;
+            border: 5px solid white;
+            border-radius:10px;
+        }
+
+        .grupo1{
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        #c1{
+            background: mediumblue;
+        }
+
+        #c2{
+            background: mediumseagreen;
+        }
+
+        #c3{
+            background: royalblue;
+        }
+    -->
+</head>
+<body>
+    <header>
+        <div id="logo">Programacion</div>
+        <div id="icono1" class="redes">HTML</div>
+        <div id="icono2" class="redes">JAVA</div>
+        <div id="icono3" class="redes">JAVASCRIPT</div>
+        <p></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="botones">DENEGAR</li>
+            <li class="botones">REGISTRARSE</li>
+            <li class="botones">CANCELAR</li>
+            <li class="botones">PERMITIR</li>
+            <li class="botones">DENEGAR</li>
+        </ul>
+    </nav>
+
+    <div id="top">
+        <ul>
+            <li>
+                <img src="img/img1.png" widht=1px>
+                <h1>Facebook</h1>
+                <p>Red Social para crear perfiles</p>
+            </li>
+            <li>
+                <img src="img/img2.jpg" width="100px">
+                <h1>Messenger</h1>
+                <p>Para subir informacion</p>
+            </li>
+            <li>
+                <img src="img/descarga (2).png" width="100px">
+                <h1>Twitter</h1>
+                <p>Para subir informacion </p>
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <aside id="izq"></aside>
+        <article>
+            <h1>Programacion</h1>
+            <p><img src="img/java.png" widht="250">La plataforma Java es el nombre de un entorno o plataforma de 
+                computación originaria de Sun Microsystems, capaz de ejecutar aplicaciones desarrolladas usando el 
+                lenguaje de programación Java u otros lenguajes que compilen a bytecode y un conjunto de herramientas 
+                de desarrollo.</p>
+                <br>
+        </article>
+        <aside id="der"></aside>
+    </section>
+
+    <footer></footer>
+    <!--
+    <header>
+        <div id="logo">
+            LOGOTIPO
+        </div>
+    </header>
+    <div id="caja">
+        <p>Hola</p>
+    </div>
+    <div class="grupo">
+        <p>Hola</p>
+    </div>
+    <div class="grupo">
+        <p>Hola</p>
+    </div>
+    <div class="grupo">
+        <p>Hola</p>
+    </div>
+    <div id="c1" class="grupo1">
+
+    </div>
+    <div id="c2" class="grupo1">
+
+    </div>
+    <div id="c3" class="grupo1">
+
+    </div>
+-->    
+</body>
+</html>
