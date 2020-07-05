@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SINTAXIS CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <style>
 
         *{
             margin:0px;
             padding: 0px;
             list-style: none;
+            font-family: sans-serif;
         }
         header{
             position: relative;
             margin: 20px auto;
             width:1000px;
             height:120px;
-            background: sandybrown;
         }
         #top ul{
             width:1010px;
@@ -26,39 +27,58 @@
             float:left;
             width:326px;
             height:192px;
-            background: lawngreen;
             margin-right:10px;
-
+            text-align:center;
         }
+        #top ul li img{
+            border-radius: 100%;
+            height: 100px;
+        }
+        #top ul li h1{
+            font-family: 'Yellowtail', cursive;
+        }
+        #top ul li p{
+            font-size: 14px;
+            margin: 10px;
+        }        
         #logo{
             position: absolute;
             top:30px;
             left:30px;
             width: 200px;
             height: 60px;
-            background: lightseagreen;
+            font-family: 'Yellowtail', cursive;
+            font-size:39px;
+            text-align: center;
+            line-height: 60px;
         }
         .redes{
             position: absolute;
             width: 42px;
             height:42px;
-            background: lightslategray;
+            background: darkgreen;
             border-radius:100% ;
+            text-align: center;
+            line-height: 42px;
+            color:white;
         }
 
         #icono1{
             top:42px;
             right:120px;
+            color: darkblue;
         }
 
         #icono2{
             top:42px;
             right:71px;
+            color: darkcyan;
         }
 
         #icono3{
             top:42px;
             right:19px;
+            color: rgb(122, 8, 8);
         }
 
         nav{
@@ -75,6 +95,10 @@
             margin:0px 2px;
             height:48px;
             background: olive;
+            font-family: 'Yellowtail', cursive;
+            color: white;
+            text-align: center;
+            line-height: 48px;
         }
         #top{
             position: relative;
@@ -87,14 +111,16 @@
             margin: auto;
             width:1000px;
             height:453px;
-            background: khaki;
         }
         footer{
             position: relative;
             margin:20px auto;
             width:1000px;
             height:70px;
-            background: lightcoral;
+            background: olive;
+            text-align: center;
+            line-height: 60px;
+            color: white;
         }
         aside#izq{
             position:absolute;
@@ -118,7 +144,20 @@
             top:0;
             width:600px;
             height: 453px;
-            background: mediumslateblue;
+        }
+        article h1{
+            font-family: 'Yellowtail', cursive;
+            font-size: 40px;
+            margin:20px;
+        }
+        article p img{
+            float: left;
+            margin-right: 20px;
+        }
+        article p{
+            margin:20px;
+            font-size: 14px;            
+            text-align: justify;
         }
     </style>
     <!--
@@ -175,9 +214,9 @@
 <body>
     <header>
         <div id="logo">Programacion</div>
-        <div id="icono1" class="redes">HTML</div>
-        <div id="icono2" class="redes">JAVA</div>
-        <div id="icono3" class="redes">JAVASCRIPT</div>
+        <div id="icono1" class="redes">A</div>
+        <div id="icono2" class="redes">B</div>
+        <div id="icono3" class="redes">C</div>
     </header>
 
     <nav>
@@ -193,7 +232,7 @@
     <div id="top">
         <ul>
             <li>
-                <img src="img/img1.png" widht=1px>
+                <img src="img/fb.jpg" width="100px">
                 <h1>Facebook</h1>
                 <p>Red Social para crear perfiles</p>
             </li>
@@ -214,7 +253,7 @@
         <aside id="izq"></aside>
         <article>
             <h1>Programacion</h1>
-            <p><img src="img/java.png" widht="250">La plataforma Java es el nombre de un entorno o plataforma de 
+            <p><img src="img/java.png" width="250px">La plataforma Java es el nombre de un entorno o plataforma de 
                 computación originaria de Sun Microsystems, capaz de ejecutar aplicaciones desarrolladas usando el 
                 lenguaje de programación Java u otros lenguajes que compilen a bytecode y un conjunto de herramientas 
                 de desarrollo.</p>
